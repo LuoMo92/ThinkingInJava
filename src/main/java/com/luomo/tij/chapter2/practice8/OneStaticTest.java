@@ -1,4 +1,4 @@
-package com.luomo.tij.chapter2.practice7;
+package com.luomo.tij.chapter2.practice8;
 
 /**
  * @author LiuMei
