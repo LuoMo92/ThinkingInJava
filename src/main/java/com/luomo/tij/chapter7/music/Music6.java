@@ -1,6 +1,6 @@
 package com.luomo.tij.chapter7.music;
 
-import static net.mindview.util.Print.*;
+import static com.luomo.tij.util.Print.print;
 
 /**
  * @author LiuMei

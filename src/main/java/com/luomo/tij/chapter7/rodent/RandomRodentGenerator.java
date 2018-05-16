@@ -7,7 +7,7 @@ import java.util.Random;
  * @date 2018-05-15.
  */
 public class RandomRodentGenerator {
-
+    protected Shared shared = new Shared();
     private Random rand = new Random();
 
     public Rodent next() {

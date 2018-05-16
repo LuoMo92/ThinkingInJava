@@ -1,13 +1,13 @@
 package com.luomo.tij.chapter4;
 
+import static com.luomo.tij.util.Print.print;
+
 /**
  * @author LiuMei
  * @date 2018-04-18
  */
 //: control/LabeledFor.java
 // For loops with "labeled break" and "labeled continue."
-
-import static net.mindview.util.Print.*;
 
 public class LabeledFor {
     public static void main(String[] args) {

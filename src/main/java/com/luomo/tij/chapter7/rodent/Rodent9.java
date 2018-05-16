@@ -7,8 +7,33 @@ import static com.luomo.tij.util.Print.print;
  * @author LiuMei
  * @date 2018-05-15.
  */
+
+class Characteristic {
+    private String s;
+
+    Characteristic(String s) {
+        this.s = s;
+        print("Creating Characteristic " + s);
+    }
+}
+
+class Description {
+    private String s;
+
+    Description(String s) {
+        this.s = s;
+        print("Creating Description " + s);
+    }
+}
+
 class Rodent {
+    Rodent() {
+        print("Rodent()");
+    }
+
     private String name = "Rodent";
+    private Characteristic c = new Characteristic("has tail");
+    private Description d = new Description("small mammal");
 
     protected void eat() {
         print("Rodent.eat()");
@@ -26,10 +51,17 @@ class Rodent {
     public String toString() {
         return name;
     }
+
 }
 
 class Mouse extends Rodent {
     private String name = "Mouse";
+    private Characteristic c = new Characteristic("likes cheese");
+    private Description d = new Description("nocturnal");
+
+    Mouse() {
+        print("Mouse()");
+    }
 
     @Override
     protected void eat() {
@@ -55,6 +87,13 @@ class Mouse extends Rodent {
 class Rat extends Rodent {
     private String name = "Rat";
 
+    private Characteristic c = new Characteristic("larger");
+    private Description d = new Description("black");
+
+    Rat() {
+        print("Rat()");
+    }
+
     @Override
     protected void eat() {
         print("Rat.eat()");
@@ -78,6 +117,12 @@ class Rat extends Rodent {
 
 class Squirrel extends Rodent {
     private String name = "Squirrel";
+    private Characteristic c = new Characteristic("climbs trees");
+    private Description d = new Description("likes nuts");
+
+    Squirrel() {
+        print("Squirrel()");
+    }
 
     @Override
     protected void eat() {
@@ -104,13 +149,11 @@ public class Rodent9 {
     private static RandomRodentGenerator gen = new RandomRodentGenerator();
 
     public static void main(String[] args) {
-        Rodent[] rodents = new Rodent[10];
-        for (Rodent r : rodents) {
-            r = gen.next();
-            print(r + ": ");
-            r.eat();
-            r.run();
-            r.sleep();
-        }
+//        Rodent[] rodents = new Rodent[10];
+//        for (Rodent r : rodents) {
+//            r = gen.next();
+//            print(r);
+//        }
+        print(new Mouse());
     }
 }
