@@ -1,6 +1,6 @@
 package com.luomo.tij.chapter5;
 
-import static net.mindview.util.Print.print;
+import static com.luomo.tij.util.Print.print;
 
 /**
  * Modify the previous exercise so that finalize() will always be called.

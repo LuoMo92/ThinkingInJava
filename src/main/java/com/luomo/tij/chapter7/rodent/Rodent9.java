@@ -1,6 +1,7 @@
 package com.luomo.tij.chapter7.rodent;
 
-import static net.mindview.util.Print.print;
+
+import static com.luomo.tij.util.Print.print;
 
 /**
  * @author LiuMei
